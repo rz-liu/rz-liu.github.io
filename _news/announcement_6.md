@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper <i>SEABO: A Simple Search-Based Method for Offline Imitation Learning</i> is accepted by <a href="https://iclr.cc/Conferences/2024">ICLR 2024</a>.
+:sparkles: Our paper <i>SEABO: A Simple Search-Based Method for Offline Imitation Learning</i> is accepted by <a href="https://iclr.cc/Conferences/2024">ICLR 2024</a>.
