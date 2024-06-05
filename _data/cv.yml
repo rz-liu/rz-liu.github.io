@@ -1,97 +1,86 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
-
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: M.Eng. in Electronic Information (Artificial Intelligence)
+      institution: Tsinghua University
+      year: 2023/09 - 2026/06
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - GPA<span>:</span> 3.90/4.00
+    - title: B.S. in Statistics with <strong style="color:red;">Honours</strong>
+      institution: Shandong University
+      year: 2019/09 - 2023/06
       description:
-        - Description 1.
-        - Description 2.
+        - GPA<span>:</span> 92.10/100
+        - Ranked 1/24 in Data Science & AI Innovation Class
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Engineering Intern
+      department: <a href="https://frontis.cn/">Frontis</a>
+      year: 2022/07 - 2022/08
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Mentors<span>:</span> Dr. Zheng Wang and Dr. <a href="http://jinfengyi.net/">Jinfeng Yi</a>.
+        - Topics<span>:</span> Information Extraction
+    - title: Research Intern
+      department: <a href="https://www.ai.pku.edu.cn/">Institute for AI</a>, <a href="https://www.pku.edu.cn/">Peking University</a>
+      year: 2022/01 - 2022/09
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Advisors<span>:</span> Prof. <a href="https://yalidu.github.io/">Yali Du</a> and Prof. <a href="https://www.yangyaodong.com/">Yaodong Yang</a>.
+        - Topics<span>:</span> Reinforcement Learning from Human Feedback (RLHF)
+        - One paper is accepted by NeurIPS'22 and another paper is under review.
+    - title: Research Intern
+      department: <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a>
+      year: 2023/07 - 2024/08
       description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+        - Advisors<span>:</span> Dr. <a href="https://baichenjia.github.io/">Chenjia Bai</a>.
+        - Topics<span>:</span> Reinforcement Learning from Human Feedback (RLHF)
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
+        - <strong style="color:red;">(Top 6%)</strong> Excellent Graduate, Shandong Province
+        - Excellent Graduate, Shandong University
+    - year: 2022
       items:
-        - Max Planck Medal
+        - <strong style="color:red;">(Top 2%)</strong> National Scholarship
+        - <strong style="color:red;">(Top 0.6%)</strong> Excellent Student, Shandong Province
+        - Dishang Scholarship
+        - Advanced Individual of Innovation and Entrepreneurship Activities, Shandong University
+        - Second Prize of Academic Scholarship, Shandong University
+        - First Prize of Individual Scholarship, Shandong University
+    - year: 2021
+      items:
+        - <strong style="color:red;">(Top 2%)</strong> National Scholarship
+        - <strong style="color:red;">(Top 0.65%)</strong> First Prize in China Undergraduate Mathematical Contest in Modeling (MCM)
+        - Third Prize in China Mathematics Competition
+        - Second Prize in May Day Mathematical Contest in Modeling
+        - Merit Student, Shandong University
+        - First Prize of Academic Scholarship, Shandong University
+        - First Prize of Individual Scholarship, Shandong University
+    - year: 2020
+      items:
+        - Third Prize in National English Competition for College Students
+        - Second Prize of Academic Scholarship, Shandong University
+
+- title: Skills
+  type: nested_list
+  contents: 
+    - title: Programming and Tools
+      items:
+        - Python
+        - PyTorch
+        - HTML/CSS
+        - JavaScript
+        - LaTeX
+    - title: English
+      items:
+        - CET-6<span>:</span> 545
+        - CET-4<span>:</span> 591
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Reinforcement Learning from Human Feedback

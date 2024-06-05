@@ -59,7 +59,14 @@
 
       {%- for author in entry.author_array limit: author_array_limit -%}
         {% assign author_is_self = false %}
+        {% assign equal_contribution = false %}
+        {% assign corresponding_author = false %}
         {%- assign author_last_name = author.last | remove: '¶' | remove: '&' | remove: '*' | remove: '†' | remove: '^' -%}
+        {%- if author.last contains '*' -%}
+          {% assign equal_contribution = true %}
+        {%- elsif author.last contains '†' -%}
+          {% assign corresponding_author = true %}
+        {%- endif -%}
         {% if site.scholar.last_name contains author_last_name %}
           {% if site.scholar.first_name contains author.first %}
             {% assign author_is_self = true %}
@@ -81,19 +88,32 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and&nbsp;{% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
-            {{- author.first }}
-            {{ author.last -}}
-          </em>
+          {%- if equal_contribution -%}
+            <em><strong>{{- author.first }} {{ author.last | remove: '*' -}}</strong></em><sup>*</sup>
+          {%- elsif corresponding_author -%}
+            <em><strong>{{- author.first }} {{ author.last | remove: '†' -}}</strong></em><sup>†</sup>
+          {%- else -%}
+            <em><strong>{{- author.first }} {{ author.last -}}</strong></em>
+          {%- endif -%}
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{coauthor_url}}">
-              {{- author.first }}
-              {{ author.last -}}
+              {%- if equal_contribution -%}
+                {{- author.first }} {{ author.last | remove: '*' -}}<sup>*</sup>
+              {%- elsif corresponding_author -%}
+                {{- author.first }} {{ author.last | remove: '†' -}}<sup>†</sup>
+              {%- else -%}
+                {{- author.first }} {{ author.last -}}
+              {%- endif -%}
             </a>
           {%- else -%}
-            {{- author.first }}
-            {{ author.last -}}
+            {%- if equal_contribution -%}
+              {{- author.first }} {{ author.last | remove: '*' -}}<sup>*</sup>
+            {%- elsif corresponding_author -%}
+              {{- author.first }} {{ author.last | remove: '†' -}}<sup>†</sup>
+            {%- else -%}
+              {{- author.first }} {{ author.last -}}
+            {%- endif -%}
           {% endif %}
         {%- endif -%}
       {% endfor %}
