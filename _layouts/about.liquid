@@ -66,6 +66,23 @@ layout: default
       {% include selected_papers.liquid %}
     {% endif %}
 
+    <!-- Services -->
+    {% if page.services %}
+      <h2>Services</h2>
+      <div class="news">
+        <div class="table-responsive">
+          <table class="table table-sm table-borderless">
+            <tr>
+              <th scope="row" style="width: 20%">Reviewer:</th>
+              <td>
+                {{ NeurIPS 2024, AAMAS 2023, ECAI 2024 }}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    {% endif %}
+
     <!-- Social -->
     {% if page.social %}
       <div class="social">
