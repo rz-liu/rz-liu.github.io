@@ -1,0 +1,7 @@
+{
+    "markdown-preview-enhanced.mathRenderingOption": "MathJax",
+    "markdown-preview-enhanced.mathInlineDelimiters": [["$$", "$$"], ["\\(", "\\)"]],
+    "markdown-preview-enhanced.mathBlockDelimiters": [["$$\\begin{equation}", "\\end{equation}$$"], ["\\[", "\\]"]],
+    "markdown-preview-enhanced.mathjaxV3ScriptSrc": "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js",
+    
+}
