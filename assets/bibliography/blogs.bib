@@ -1,4 +1,47 @@
-% Introduction
+% ML/AI:
+@String { NIPS              = {Advances in Neural Information Processing Systems (NeurIPS)} }
+@String { ICML              = {International Conference on Machine Learning (ICML)} }
+@String { ICLR              = {International Conference on Learning Representations (ICLR)} }
+
+@String { AAAI              = {{AAAI} Conference on Artificial Intelligence } }
+@String { IJCAI             = {International Joint Conference on Artificial Intelligence (IJCAI)} }
+
+@String { AAMAS             = {Autonomous Agents and Multiagent Systems (AAMAS)} }
+@String { COLT              = {Conference on Learning Theory (COLT)} }
+@String { AISTATS           = {Artificial Intelligence and Statistics (AISTATS)} }
+@String { UAI               = {Uncertainty in Artificial Intelligence (UAI)} }
+
+@String { TPAMI             = {IEEE Transactions on Pattern Analysis \& Machine Intelligence} }
+@String { JMLR              = {Journal of Machine Learning Research} }
+@String { JAIR              = {Journal of Artificial Intelligence Research} }
+
+@String { NC                = {Neural Computation} }
+
+% Vision
+@String { CVPR              = {{IEEE} Conference on Computer Vision and Pattern Recognition (CVPR)} }
+@String { ECCV              = {European Conference on Computer Vision (ECCV)} }
+
+% Robotics:
+@String { ijrr              = {International Journal of Robotics Research} }
+@String { isrr              = {International Symposium on Robotics Research (ISRR)} }
+@String { ICRA              = {{IEEE} International Conference on Robotics and Automation (ICRA)} }
+@String { IROS              = {{IEEE} International Conference on Intelligent Robots and Systems (IROS)} }
+@String { TRO               = {IEEE Transactions on Robotics} }
+@String { jfr               = {Journal of Field Robotics} }
+@String { ar                = {Autonomous Robots} }
+@String { rss               = {Robotics: Science and Systems (RSS)} }
+@String { wafr              = {Workshop on the Algorithmic Foundations of Robotics (WAFR)} }
+@String { corl              = {Conference on Robot Learning (CoRL)} }
+
+%Control:
+@String { tac               = {IEEE Transactions on Automatic Control} }
+@String { automatica        = {Automatica} }
+@String { acc               = {American Control Conference (ACC)} }
+@String { cdc               = {IEEE Conference on Decision and Control (CDC)} }
+@String { tsc               = {IEEE Transactions on Control Systems Technology} }
+@String { jgcd              = {AIAA Journal of Guidance, Control, and Dynamics} }
+
+% RL
 @article{mnih2013playing,
   author  = {Volodymyr Mnih and
              Koray Kavukcuoglu and
@@ -107,6 +150,22 @@
   year    = {2019}
 }
 
+@article{PPO,
+  title   = {Proximal policy optimization algorithms},
+  author  = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+  journal = {arXiv preprint arXiv:1707.06347},
+  year    = {2017},
+  url     = {https://arxiv.org/abs/1707.06347}
+}
+
+@inproceedings{HER,
+  title   = {Hindsight experience replay},
+  author  = {Andrychowicz, Marcin and Wolski, Filip and Ray, Alex and Schneider, Jonas and Fong, Rachel and Welinder, Peter and McGrew, Bob and Tobin, Josh and Pieter Abbeel, OpenAI and Zaremba, Wojciech},
+  journal = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume  = {30},
+  year    = {2017},
+  url     = {https://arxiv.org/abs/1707.01495}
+}
 
 
 @article{zhu2020robosuite,
@@ -300,11 +359,13 @@
   title     = {{LIV}: Language-Image Representations and Rewards for Robotic Control},
   author    = {Ma, Yecheng Jason and Kumar, Vikash and Zhang, Amy and Bastani, Osbert and Jayaraman, Dinesh},
   booktitle = {International Conference on Machine Learning (ICML)},
-  volume    = {202},
   pages     = {23301--23320},
   year      = {2023},
+  volume    = {202},
   series    = {Proceedings of Machine Learning Research},
-  publisher = {PMLR}
+  publisher = {PMLR},
+  pdf       = {https://proceedings.mlr.press/v202/ma23b/ma23b.pdf},
+  url       = {https://proceedings.mlr.press/v202/ma23b.html}
 }
 
 @inproceedings{LAPP,
@@ -319,10 +380,10 @@
 }
 
 @article{LAMP,
-  title     = {Language reward modulation for pretraining reinforcement learning},
-  author    = {Adeniji, Ademi and Xie, Amber and Sferrazza, Carmelo and Seo, Younggyo and James, Stephen and Abbeel, Pieter},
-  journal   = {arXiv preprint arXiv:2308.12270},
-  year      = {2023}
+  title   = {Language reward modulation for pretraining reinforcement learning},
+  author  = {Adeniji, Ademi and Xie, Amber and Sferrazza, Carmelo and Seo, Younggyo and James, Stephen and Abbeel, Pieter},
+  journal = {arXiv preprint arXiv:2308.12270},
+  year    = {2023}
 }
 
 @inproceedings{Ego4D,
@@ -357,10 +418,10 @@
 }
 
 @article{CriticGPT,
-  title     = {Enhancing Robotic Manipulation with AI Feedback from Multimodal Large Language Models},
-  author    = {Liu, Jinyi and Yuan, Yifu and Hao, Jianye and Ni, Fei and Fu, Lingzhi and Chen, Yibin and Zheng, Yan},
-  journal   = {arXiv preprint arXiv:2402.14245},
-  year      = {2024}
+  title   = {Enhancing Robotic Manipulation with AI Feedback from Multimodal Large Language Models},
+  author  = {Liu, Jinyi and Yuan, Yifu and Hao, Jianye and Ni, Fei and Fu, Lingzhi and Chen, Yibin and Zheng, Yan},
+  journal = {arXiv preprint arXiv:2402.14245},
+  year    = {2024}
 }
 
 % PbRL
@@ -441,10 +502,10 @@
 }
 
 @article{SEER,
-  title     = {Efficient Preference-based Reinforcement Learning via Aligned Experience Estimation},
-  author    = {Bai, Fengshuo and Zhao, Rui and Zhang, Hongming and Cui, Sijia and Wen, Ying and Yang, Yaodong and Xu, Bo and Han, Lei},
-  journal   = {arXiv preprint arXiv:2405.18688},
-  year      = {2024}
+  title   = {Efficient Preference-based Reinforcement Learning via Aligned Experience Estimation},
+  author  = {Bai, Fengshuo and Zhao, Rui and Zhang, Hongming and Cui, Sijia and Wen, Ying and Yang, Yaodong and Xu, Bo and Han, Lei},
+  journal = {arXiv preprint arXiv:2405.18688},
+  year    = {2024}
 }
 
 @inproceedings{PT,
@@ -566,10 +627,10 @@
 }
 
 @article{bai2022training,
-  title     = {Training a helpful and harmless assistant with reinforcement learning from human feedback},
-  author    = {Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and others},
-  journal   = {arXiv preprint arXiv:2204.05862},
-  year      = {2022}
+  title   = {Training a helpful and harmless assistant with reinforcement learning from human feedback},
+  author  = {Bai, Yuntao and Jones, Andy and Ndousse, Kamal and Askell, Amanda and Chen, Anna and DasSarma, Nova and Drain, Dawn and Fort, Stanislav and Ganguli, Deep and Henighan, Tom and others},
+  journal = {arXiv preprint arXiv:2204.05862},
+  year    = {2022}
 }
 
 @article{yang2023using,
@@ -586,14 +647,7 @@
   year    = {2024}
 }
 
-@inproceedings{DPO,
-  title     = {Direct Preference Optimization: Your Language Model is Secretly a Reward Model},
-  author    = {Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Manning, Christopher D and Ermon, Stefano and Finn, Chelsea},
-  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
-  volume    = {36},
-  pages     = {53728--53741},
-  year      = {2023}
-}
+
 
 @article{Rewardbench,
   title   = {{Rewardbench}: Evaluating reward models for language modeling},
@@ -626,27 +680,27 @@
 
 
 @article{Llama1,
-  title     = {{Llama}: Open and efficient foundation language models},
-  author    = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
-  journal   = {arXiv preprint arXiv:2302.13971},
-  year      = {2023}
+  title   = {{Llama}: Open and efficient foundation language models},
+  author  = {Touvron, Hugo and Lavril, Thibaut and Izacard, Gautier and Martinet, Xavier and Lachaux, Marie-Anne and Lacroix, Timoth{\'e}e and Rozi{\`e}re, Baptiste and Goyal, Naman and Hambro, Eric and Azhar, Faisal and others},
+  journal = {arXiv preprint arXiv:2302.13971},
+  year    = {2023}
 }
 
 @article{Llama2,
-  title     = {{Llama 2}: Open foundation and fine-tuned chat models},
-  author    = {Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
-  journal   = {arXiv preprint arXiv:2307.09288},
-  year      = {2023}
+  title   = {{Llama 2}: Open foundation and fine-tuned chat models},
+  author  = {Touvron, Hugo and Martin, Louis and Stone, Kevin and Albert, Peter and Almahairi, Amjad and Babaei, Yasmine and Bashlykov, Nikolay and Batra, Soumya and Bhargava, Prajjwal and Bhosale, Shruti and others},
+  journal = {arXiv preprint arXiv:2307.09288},
+  year    = {2023}
 }
 
 @article{PaLM,
-  title     = {{PaLM}: Scaling Language Modeling with Pathways},
-  author    = {Chowdhery, Aakanksha and Narang, Sharan and Devlin, Jacob and Bosma, Maarten and Mishra, Gaurav and Roberts, Adam and Barham, Paul and Chung, Hyung Won and Sutton, Charles and Gehrmann, Sebastian and others},
-  journal   = {Journal of Machine Learning Research (JMLR)},
-  volume    = {24},
-  number    = {240},
-  pages     = {1--113},
-  year      = {2023}
+  title   = {{PaLM}: Scaling Language Modeling with Pathways},
+  author  = {Chowdhery, Aakanksha and Narang, Sharan and Devlin, Jacob and Bosma, Maarten and Mishra, Gaurav and Roberts, Adam and Barham, Paul and Chung, Hyung Won and Sutton, Charles and Gehrmann, Sebastian and others},
+  journal = {Journal of Machine Learning Research (JMLR)},
+  volume  = {24},
+  number  = {240},
+  pages   = {1--113},
+  year    = {2023}
 }
 
 @inproceedings{RT-2,
@@ -780,3 +834,56 @@
   pages     = {1283--1294},
   year      = {2020}
 }
+
+% RLHF4LLM
+@inproceedings{DPO,
+  title     = {Direct Preference Optimization: Your Language Model is Secretly a Reward Model},
+  author    = {Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and Manning, Christopher D and Ermon, Stefano and Finn, Chelsea},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  volume    = {36},
+  pages     = {53728--53741},
+  year      = {2023},
+  url       = {http://arxiv.org/abs/2305.18290}
+}
+
+@article{OnlineRLHF,
+  title   = {Gibbs sampling from human feedback: A provable kl-constrained framework for rlhf},
+  author  = {Xiong, Wei and Dong, Hanze and Ye, Chenlu and Zhong, Han and Jiang, Nan and Zhang, Tong},
+  journal = {arXiv preprint arXiv:2312.11456},
+  year    = {2023},
+  url     = {http://arxiv.org/abs/2312.11456}
+}
+
+@article{TDPO,
+  title   = {Token-level Direct Preference Optimization},
+  author  = {Zeng, Yongcheng and Liu, Guoqing and Ma, Weiyu and Yang, Ning and Zhang, Haifeng and Wang, Jun},
+  journal = {arXiv preprint arXiv:2404.11999},
+  year    = {2024},
+  url     = {http://arxiv.org/abs/2404.11999}
+}
+
+@article{DPO-Q,
+  title   = {From $r$ to $Q^*$: Your Language Model is Secretly a Q-Function},
+  author  = {Rafailov, Rafael and Hejna, Joey and Park, Ryan and Finn, Chelsea},
+  journal = {arXiv preprint arXiv:2404.12358},
+  year    = {2024},
+  url     = {http://arxiv.org/abs/2404.12358}
+}
+
+@article{RTO,
+  title   = {DPO Meets PPO: Reinforced Token Optimization for RLHF},
+  author  = {Zhong, Han and Feng, Guhao and Xiong, Wei and Zhao, Li and He, Di and Bian, Jiang and Wang, Liwei},
+  journal = {arXiv preprint arXiv:2404.18922},
+  year    = {2024},
+  url     = {http://arxiv.org/abs/2404.18922}
+}
+
+@article{RLHFlow,
+  title   = {RLHF Workflow: From Reward Modeling to Online RLHF},
+  author  = {Dong, Hanze and Xiong, Wei and Pang, Bo and Wang, Haoxiang and Zhao, Han and Zhou, Yingbo and Jiang, Nan and Sahoo, Doyen and Xiong, Caiming and Zhang, Tong},
+  journal = {arXiv preprint arXiv:2405.07863},
+  year    = {2024},
+  url     = {http://arxiv.org/abs/2405.07863}
+}
+
+
