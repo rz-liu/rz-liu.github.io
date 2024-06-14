@@ -899,7 +899,8 @@
       var url = ent.url;
       var arxiv_match = /arxiv\.org\/abs\/([0-9\.]*)/.exec(url);
       if (arxiv_match != null) {
-        url = `http://arxiv.org/pdf/${arxiv_match[1]}.pdf`;
+        // url = `http://arxiv.org/pdf/${arxiv_match[1]}.pdf`;
+        label = "arXiv";
       }
 
       if (url.slice(-4) == ".pdf") {
@@ -907,7 +908,7 @@
       } else if (url.slice(-5) == ".html") {
         var label = "HTML";
       }
-      return ` &ensp;<a href="${url}">[${label || "link"}]</a>`;
+      return ` &ensp;<a href="${url}">[${label || "URL"}]</a>`;
     } /* else if ("doi" in ent){
       return ` &ensp;<a href="https://doi.org/${ent.doi}" >[DOI]</a>`;
     }*/ else {
