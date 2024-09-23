@@ -8,7 +8,7 @@ pagination:
   enabled: true
   collection: posts
   permalink: /page/:num/
-  per_page: 5
+  per_page: 20
   sort_field: date
   sort_reverse: true
   trail:
@@ -139,7 +139,11 @@ pagination:
           <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
         {% endif %}
       </h3>
-      <p>{{ post.description }}</p>
+      <p>{{ post.description }}
+        {% if post.paper_url %}
+        <a href="{{ post.paper_url }}" target="_blank">[URL]</a>
+        {% endif %}
+      </p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
         {{ post.date | date: '%B %d, %Y' }}
